@@ -1,8 +1,8 @@
 import * as actions from "./actionTypes";
 
-export const cardRemove = description => ({
+export const cardRemove = id => ({
     type: actions.CARD_REMOVED,
     payload: {
-        description
+        id
     }
 });
