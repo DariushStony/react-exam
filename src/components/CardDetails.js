@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 const CardDetails = () => {
 
     const { id } = useParams();
-    const { data: card, isPending, error } = useFetch(`http://localhost/cards/${id}`);
+    const { data: card, isPending, error } = useFetch(`http://localhost:8000/cards/${id}`);
 
     return (
         <div className="card-details">
