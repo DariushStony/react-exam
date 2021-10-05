@@ -1,4 +1,4 @@
-import { useParams, userHistory } from "react-router";
+import { useParams } from "react-router";
 import useFetch from "../hooks/useFetch";
 
 const CardDetails = () => {

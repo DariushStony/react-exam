@@ -6,7 +6,7 @@ const reducer = (state = [], action) => {
             return state.filter(card => card.id !== action.payload.id);
 
         case actions.CARDS_ADDED:
-            return action.payload.cards;
+            return action.payload;
 
         default:
             return state;

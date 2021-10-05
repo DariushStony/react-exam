@@ -1,15 +1,14 @@
 import CardList from "./CardList";
-import useFetch from "../hooks/useFetch"
-import { useSelector, useDispatch } from "react-redux";
-import { cardRemove, cardsAdd } from "../store/actions/actions";
+import useFetch from "../hooks/useFetch";
+import { useDispatch } from "react-redux";
+import { cardsAdd } from "../store/actions/actions";
 
 const Home = () => {
 
     const { data: cards, isPending, error } = useFetch("http://localhost:8000/cards");
-    // const state = useSelector((state) => state);
     const dispatch = useDispatch();
 
-    if (!error && !isPending && cards) {
+    if (cards) {
         dispatch(cardsAdd(cards));
     }
 
@@ -17,7 +16,8 @@ const Home = () => {
         <div className="home">
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            {cards && <CardList cards={cards} title="All Cards!" />}
+            {cards && <CardList title="All Cards!" />}
+            {/* {cards && <CardList cards={cards} title="All Cards!" />} */}
         </div>
     );
 }
