@@ -6,3 +6,8 @@ export const cardRemove = id => ({
         id
     }
 });
+
+export const cardsAdd = cards => ({
+    type: actions.CARDS_ADDED,
+    payload: cards
+});
