@@ -6,7 +6,7 @@ const CardDetails = () => {
 
     const { id } = useParams();
     // const { data: card, isPending, error } = useFetch(`http://localhost:8000/cards/${id}`);
-    const card = useSelector((state) => state.find(card => card.id == id));
+    const card = useSelector((state) => state.find(card => card.id === Number(id)));
 
     return (
         <div className="card-details">
