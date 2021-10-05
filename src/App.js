@@ -15,14 +15,14 @@ function App() {
                         <Route exact path="/">
                             <Home />
                         </Route>
+                        <Route path="/about" >
+                            <AboutUs />
+                        </Route>
                         <Route path="/cards/:id">
                             <CardDetails />
                         </Route>
-                        <Route>
-                            <AboutUs path="/about" />
-                        </Route>
-                        <Route>
-                            <Notfound path="*"/>
+                        <Route path="*">
+                            <Notfound />
                         </Route>
                     </Switch>
                 </div>
