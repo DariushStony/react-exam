@@ -54,7 +54,7 @@
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card-preview a{
+.card-preview a {
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@
     margin-bottom: 8px;
 }
 
-.card-preview button{
+.card-preview button {
     border: none;
     outline: 0;
     padding: 5px;
@@ -75,7 +75,7 @@
     border-radius: 25px;
 }
 
-.card-preview button:hover{
+.card-preview button:hover {
     opacity: 0.7;
 }
 
@@ -84,4 +84,14 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.about-us h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 10px;
+}
+
+.about-us div {
+    margin: 20px 0;
 }
